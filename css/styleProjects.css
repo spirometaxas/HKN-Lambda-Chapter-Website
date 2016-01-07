@@ -169,6 +169,23 @@ hr {
     font-size: 16px;
 }
 
+.parallax-window {
+    min-height: 100%;
+    max-height: 100%;
+    top: 0px;
+    background: transparent;
+}
+
+@media (max-height: 580px) {
+    h2 {
+        color:rgba(0, 0, 0, 0);
+    }
+}
+
+h6 {
+    margin-top:0;
+}
+
 
 /* NAVBAR
 -------------------------------------------------- */
@@ -204,11 +221,13 @@ header .dropdown-menu {
   width: 100%;
   position:static;
   top:-32px;
+  margin-top:-50px;
 }
 
 #nav.affix {
    position: fixed;
    top: 0;
+   margin-top: 0px;
    z-index:10;
    -webkit-transition: all .6s ease-in-out;
 }
