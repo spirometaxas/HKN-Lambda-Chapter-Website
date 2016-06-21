@@ -13,6 +13,7 @@ body {
 
 #wrap {
   margin: 0 auto -60px;
+  /* Pad bottom by footer height */
   padding: 0 0 60px;
 }
 
@@ -27,16 +28,16 @@ body {
 .intro {
     overflow:hidden; 
     height:100%;
-    background-image:url('../img/PennEngineering5.JPG');
+    background-image:url('../img/PennEngineering4.JPG');
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: 0px 0px;
+    background-position: 0px -200px;
 }
 
-.aboutintro {
+.projectsintro {
     overflow:hidden; 
     height:100%;
-    background-image:url('../img/AboutPhoto.JPG');
+    background-image:url('../img/SeniorDesignPhoto3.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: 0px -200px;
@@ -48,22 +49,10 @@ body {
 
 h1 {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size:80px;
+    font-size:40px;
     text-align: center;
     color:#fff;
-    margin-top:7%;
-     -webkit-text-stroke: 1px black;
-}
-
-@media (min-width: 1500px) {
-    h1 {
-        font-family: 'Merriweather Sans', sans-serif;
-        font-size:120px;
-        text-align: center;
-        color:#fff;
-        margin-top:7%;
-         -webkit-text-stroke: 1px black;
-    }
+    margin-top:45%;
 }
 
 h2 {
@@ -72,22 +61,36 @@ h2 {
     color:#fff;
 }
 
-.smaller {
-    font-size:15px;
-    margin-top:10px;
+h3 {
+    font-size:40px;
 }
 
-@media (min-width: 1500px) {
-    h2 {
-        font-size:40px;
-        text-align: center;
-        color:#fff;
-    }
+.paragraph {
+    font-size:18px;
+}
 
-    .smaller {
-        font-size:25px;
-        margin-top:10px;
-    }
+.founder {
+    font-size:21px;
+    font-weight: bold;
+}
+
+.bold2 {
+    font-weight: bold;
+    
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.page-header {
+    border-color:#7e7e7e;
 }
 
 .logo {
@@ -97,13 +100,7 @@ h2 {
 }
 
 .logo > img {
-    width: 13%;
-}
-
-@media (min-width: 1500px) {
-    .logo > img {
-        width: 16%;
-    }
+    width: 15%;
 }
 
 .sponsors > .penn > img {
@@ -120,120 +117,9 @@ h2 {
     margin-left:5px;
 }
 
-h3 {
-    font-size: 18px;
-    color:#000;
-}
-
-hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-}
-
-.frontImage img {
-    width:100%;
-}
-
-.centerText {
-    text-align:center;
-}
-
-.titleText {
-    /*font-family:Verdana, Geneva, sans-serif;*/
-    font-family: 'Open Sans', sans-serif;
-    font-size:23px;
-    font-weight: bold;
-}
-
-.description {
-    font-size: 15px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/*.smaller {
+.smaller {
     font-size:15px;
-}*/
-
-.titletext {
-    font-size:40px;
-    color:#fff;
-}
-
-.carousel-content {
-    color:black;
-    display:flex;
-    align-items:center;
-}
-
-.NewsHeader {
-    font-size:35px;
-}
-
-.bold2 {
-    font-weight: bold;
-    
-}
-
-.leftArrow {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 15%;
-    text-align:center;
-}
-
-.rightArrow {
-    position: absolute;
-    top:50%;
-    right: 0;
-    width: 15%;
-    text-align:center;
-}
-
-.larger {
-    font-size:30px;
-    color:#585858;
-}
-
-.centerText {
-    text-align:center;
-}
-
-.btn {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    font-size:20px;
-    border: 1px solid #585858;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-btn-default {
-    border: 1px solid #287bc3;
-    color: #287bc3;
-    background-color: transparent;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid #585858;
-    outline: 0;
-    color: #fff;
-    background-color: #585858;
-    font-size: 20px;
-}
-
-.spaceAround {
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top:10px;
 }
 
 .footerLogo img {
@@ -265,27 +151,17 @@ btn-default {
     }
 }
 
-.smallerTitle {
-    font-size:40px;
-    margin-top:100px;
-}
-
 .introSmall {
     overflow:hidden; 
-    background-image:url('../img/PennEngineering5Small.jpg');
+    background-image:url('../img/ArchivePhoto2.JPG');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
-.logoSmall {
-  color:#333;
-  top:70px;
-  text-align:center;
-}
-
-.logoSmall > img {
-    width: 30%;
+.awardImage {
+    max-width:100%;
+    height:auto;
 }
 
 .parallax-window {
@@ -305,11 +181,9 @@ h6 {
     margin-top:0;
 }
 
-.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
+.smallText {
+    font-size:10px;
 }
-
 
 
 
@@ -327,9 +201,6 @@ h6 {
 
 #wrap > .container {
   padding: 60px 15px 0;
-}
-.container .credit {
-  margin: 20px 0;
 }
 
 #footer {
@@ -361,6 +232,9 @@ header .dropdown-menu {
    -webkit-transition: all .6s ease-in-out;
 }
 
+#footer > .container {
+  
+}
 
 @media (min-width: 767px) {
   .navbar-nav.nav-justified > li{
@@ -372,12 +246,18 @@ header .dropdown-menu {
   margin: 1px 1px; 
 }  
   
+/* customize nav style */
 .navbar-custom {
     background-color: #2e2e2e;
 	font-weight:700;
     text-transform:uppercase;
     border-width:0;
 }
+
+.non-active {
+    background-color: #2e2e2e!important;
+}
+
 .navbar-custom  .navbar-nav>li>a {
 	color: #ddd;
 }
@@ -392,7 +272,7 @@ header .dropdown-menu {
 	border-bottom-color: #999;
 }
 
-.navbar-collapse.in { /*3.0.2 bug workaround*/
+.navbar-collapse.in { 
     overflow-y: visible;
 }
 
@@ -408,6 +288,14 @@ header .dropdown-menu {
 	header {
 	
 	}
+}
+
+.dropdown {
+    background-color: #000;
+}
+
+.dropup {
+    background-color: #000;
 }
 
 .scroll-top {
@@ -428,13 +316,29 @@ header .dropdown-menu {
 section {
   color: #ffffff;
   min-height: 400px;
-  height: auto !important;
-  height: 100%;
+  /*height: auto !important;
+  height: 100%;*/
   padding-top:100px;
 }
 
 .bg-1 {
 	background: url('../img/Project1.JPG') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-2 {
+	background: url('../img/Project2.JPG') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-3 {
+	background: url('../img/Project3.JPG') no-repeat center center fixed; 
     -webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -450,3 +354,4 @@ section {
       padding-top:200px;
     }
 }
+
